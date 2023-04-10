@@ -31,8 +31,14 @@ html {
 
 /* Nav Bar */
 .logo {
-    width: 16vh;
+    width: 25vh;
+
     margin-left: 5vh;
+    margin-top:7.5vh;
+
+    background-color:black;
+    border-radius: 0% 0% 20% 20%;
+
 
 
 }
@@ -119,7 +125,7 @@ html {
 .text1 {
     color: #fff;
     font-size: 110%;
-    line-height: 2.2vh;
+    line-height: 2.5vh;
     text-align: left;
     margin-top: 2vh;
     width: 40%;
@@ -170,6 +176,7 @@ html {
   
 .button1:hover,
 .button1:active {
+    transition: 0.3s ease-in 0s;
     background-color: initial;
     background-position: 0 0;
     color: #0088a9;
@@ -177,6 +184,7 @@ html {
   
 .button2:hover,
 .button2:active {
+      transition: 0.2s ease-in 0s;
       background-color: initial;
       background-position: 0 0;
       color: rgb(0, 0, 0);
