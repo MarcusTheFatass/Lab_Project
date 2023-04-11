@@ -1,0 +1,253 @@
+/* Add a bar on left side of text, Solid Nav Bar, Get Logo which jumps to homepage, Two buttons Learn more and Apply, Solid Color Footer with mailto link, fade in for text when entering webpage.
+*/
+
+
+/* Whole Page */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+html {
+    background-color: white;
+    font-size: calc(0.7vh + 0.7vw);
+}
+
+
+/* Background */
+.banner {
+    width: 100%;
+    height: 100%;
+    min-width: 50%;
+    background-image: url(images/background1.png);
+    background-size:cover;
+    background-attachment: fixed;
+
+
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y:hidden;
+
+
+
+}
+
+/* Nav Bar */
+.logo {
+    width: 25vh;
+
+    margin-left: 5vh;
+    margin-top:7.5vh;
+
+    background-color:black;
+    border-radius: 0% 0% 20% 20%;
+
+    z-index: -5;
+
+}
+
+.logo:hover{
+    cursor:pointer;
+}
+
+.navbar{
+    height: 10%;
+    width:100%;
+    align-items: center;
+    padding-right: 1vw;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: rgba(39, 39, 39, 0.61);
+    backdrop-filter: blur(5px);
+    
+
+    
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 6vh;
+}
+nav {
+    padding-right:3%
+}
+
+.Links li a{
+    transition: 0.3s ease-in 0s;
+
+    color:white;
+    font-weight: 150;
+    text-decoration: none;
+    font-size: calc(0.8vh + 0.8vw);
+}
+
+.about a:hover {
+    color: #0088a9;
+}
+.jobs a:hover {
+    color: #0088a9;
+}
+.apply a:hover {
+    color: #0088a9;
+}
+.enhancements a:hover {
+    color: #0088a9;
+}
+
+.index{
+    padding: 1vh 1.7vw;
+    background-color: #0088a9;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.index:hover{
+    transition: 0.3s ease-in 0s;
+    background-color: #005266;
+}
+
+
+
+/* Center Text */
+.EntryText{
+    height: 60%;
+    float: left;
+    padding-top: 20vh;
+    padding-bottom: 5vh;
+    padding-left: 15%;
+    margin-left:5%vh;
+
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+}
+
+
+.LP{
+    color: white;
+    font-size:500%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text1 {
+    color: #fff;
+    font-size: 110%;
+    line-height: 2.5vh;
+    text-align: left;
+    margin-top: 2vh;
+    width: 40%;
+
+    border-left-style: solid;   
+    padding-left: 1%;
+}
+
+.button1 {
+    background: #0088a9;
+    border: 1px solid #0088a9;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 105%;
+    font-weight: 600;
+    line-height: 1vw;
+    
+    padding: 2.5vh 2vw;
+    text-align: center;
+  
+    margin: 2vw 0vw 0vw 0vw;
+  }
+
+.button2 {
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+      
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 120%;
+    font-weight: 600;
+    line-height: 1vw;
+      
+    padding: 2.5vh 2vw;
+    text-align: center;
+    
+    margin: 1vw;
+  
+    background-color: initial;
+    background-position: 0 0;
+    color: white;
+  }
+  
+.button1:hover,
+.button1:active {
+    transition: 0.3s ease-in 0s;
+    background-color: initial;
+    background-position: 0 0;
+    color: #0088a9;
+  }
+  
+.button2:hover,
+.button2:active {
+      transition: 0.2s ease-in 0s;
+      background-color: initial;
+      background-position: 0 0;
+      color: rgb(0, 0, 0);
+      background-color:white;
+  }
+  
+.button1:active,
+.button2:active {
+    opacity: .5;
+  }
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+.footer{
+    background: rgb(0,0,0);
+    color:white;
+    padding: 3vw
+}
+
+
+.footlinks{
+
+  align-items: center;
+  padding-right: 2vw;
+
+  display: flex;   
+  justify-content: space-between;
+  
+ 
+
+
+
+}
+.footlinks a{
+    color:rgb(119, 0, 255);
+
+}
+
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:45%;
+    height:45%;
+    margin-top:5% 
+}
+
+
+ 
